@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #10B981;
+  --secondary: #D946EF;
+  --background: #0F172A;
+  --card-bg: #1E293B;
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+}
+
+@layer components {
+  .neon-text {
+    text-shadow: 0 0 5px var(--primary), 0 0 10px var(--primary);
+  }
+  
+  .neon-border {
+    box-shadow: 0 0 5px var(--primary), 0 0 10px var(--primary);
+  }
+  
+  .button-glow {
+    transition: all 0.3s ease;
+  }
+  
+  .button-glow:hover {
+    box-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary);
+  }
+  
+  .card {
+    @apply bg-card-bg rounded-lg overflow-hidden border border-gray-800 transition-all duration-300;
+  }
+  
+  .card:hover {
+    @apply border-gray-700 transform -translate-y-1;
+  }
+  
+  .form-label {
+    @apply block text-sm font-medium text-gray-300 mb-1;
+  }
+  
+  .form-input {
+    @apply w-full bg-gray-800 border border-gray-700 rounded-lg p-2 text-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent;
+  }
+}
+
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap');
