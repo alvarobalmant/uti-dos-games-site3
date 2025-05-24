@@ -13,7 +13,7 @@
 }
 
 .btn-primary {
-  @apply bg-primary text-black hover:bg-opacity-90 button-glow;
+  @apply bg-primary text-black hover:bg-opacity-90 shadow-lg;
 }
 
 .btn-secondary {
@@ -55,7 +55,7 @@
 }
 
 .banner-title {
-  @apply text-3xl md:text-5xl font-bold mb-4 neon-text;
+  @apply text-3xl md:text-5xl font-bold mb-4;
 }
 
 .banner-subtitle {
