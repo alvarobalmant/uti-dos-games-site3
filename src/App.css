@@ -7,61 +7,6 @@
   margin: 0 auto;
 }
 
-/* Estilos para botões */
-.btn {
-  @apply px-4 py-2 rounded-lg font-medium transition-all duration-300;
-}
-
-.btn-primary {
-  @apply bg-primary text-black hover:bg-opacity-90 shadow-lg;
-}
-
-.btn-secondary {
-  @apply bg-secondary text-white hover:bg-opacity-90;
-}
-
-.btn-outline {
-  @apply border border-primary text-primary hover:bg-primary hover:bg-opacity-10;
-}
-
-/* Estilos para cards de produto */
-.product-card {
-  @apply card h-full flex flex-col;
-}
-
-.product-card-image {
-  @apply w-full h-48 object-cover;
-}
-
-.product-card-content {
-  @apply p-4 flex flex-col flex-grow;
-}
-
-.product-card-title {
-  @apply text-lg font-bold mb-2 line-clamp-2;
-}
-
-.product-card-price {
-  @apply text-xl font-bold text-primary mt-auto;
-}
-
-/* Estilos para o banner */
-.banner {
-  @apply rounded-xl overflow-hidden relative mb-8;
-}
-
-.banner-content {
-  @apply absolute inset-0 flex flex-col justify-center items-start p-8 bg-gradient-to-r from-black/70 to-transparent;
-}
-
-.banner-title {
-  @apply text-3xl md:text-5xl font-bold mb-4;
-}
-
-.banner-subtitle {
-  @apply text-lg md:text-xl mb-6 max-w-md;
-}
-
 /* Animações */
 @keyframes pulse {
   0%, 100% {
